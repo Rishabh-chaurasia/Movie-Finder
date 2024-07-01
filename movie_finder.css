@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 2vw; /* Using vw for font size */
+    background-color: rgb(233, 233, 233);
+}
+
+.title {
+    font-size: 3vw; /* Adjusted font size for responsiveness */
+    font-weight: 600;
+    color: white;
+    background-color: rgb(19, 19, 56);
+    width: 100%;
+    padding: 2vw;
+    text-align: center;
+}
+
+.full_body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-input {
+    border: none;
+    outline: none;
+    background-color: white;
+    padding: 1vw 2vw;
+    border: 1px solid grey;
+    margin-right: 2vw;
+}
+
+.form-input:focus {
+    background-color: white;
+}
+
+.search {
+    border: none;
+    outline: none;
+    background-color: rgb(19, 19, 56);
+    padding: 1vw 2vw;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10vh;
+}
+
+.movie-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgb(24, 51, 59);
+    margin: 2vh;
+    padding: 3vh;
+    width: 80vw;
+}
+
+.movie-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+}
+
+.value {
+    font-size: 1.5vw;
+    width: auto;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    .title {
+        font-size: 4vw;
+    }
+
+    .form-input, .search {
+        padding: 2vw;
+    }
+
+    .search-box {
+        margin: 8vh;
+        flex-direction: column;
+    }
+
+    .movie-title {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .value {
+        font-size: 2.5vw;
+    }
+
+    .card {
+        flex-direction: column;
+        width: 90vw;
+        padding: 4vh 2vw;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .title {
+        font-size: 5vw;
+    }
+
+    .form-input, .search {
+        padding: 2.5vw;
+        width: 80vw;
+    }
+
+    .search-box {
+        margin: 6vh;
+    }
+
+    .card {
+        padding: 4vh 3vw;
+        width: 95vw;
+    }
+
+    .value {
+        font-size: 3vw;
+    }
+}
